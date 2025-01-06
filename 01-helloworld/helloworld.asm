@@ -11,8 +11,11 @@ SECTION     .data           ; Section containing initialized data
     EatLen: equ $-EatMsg
 SECTION     .bss            ; Section containing uninitialized data
 SECTION     .text           ; Section containing code
-global      _start          ; Entry point for linker!
-start:                         
+global      main            ; Linker needs this to find the entry point!
+main:
+    mov rbp,rsp             ; SASM may add another copy of this in debug
+mode!   
+    
     mov     rbp,    rsp     ; for correct debugging
     nop
     mov     rax,    1       ; 1 = sys_write for syscall
