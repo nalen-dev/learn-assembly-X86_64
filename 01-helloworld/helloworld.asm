@@ -14,7 +14,6 @@ SECTION     .text           ; Section containing code
 global      main            ; Linker needs this to find the entry point!
 main:
     mov rbp,rsp             ; SASM may add another copy of this in debug
-mode!   
     
     mov     rbp,    rsp     ; for correct debugging
     nop
