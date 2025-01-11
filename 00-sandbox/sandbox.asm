@@ -7,7 +7,6 @@ main:
     ; Put code between two nops ....
     nop
 
-    
     nop    
     ; Put code between two nops ....    
 
