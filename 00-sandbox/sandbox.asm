@@ -5,7 +5,8 @@ section .data
 
 section .text
 global main
-    mov rbp, rsp
+    mov rbp, rsp ;for debbuging
+
 
 
 
