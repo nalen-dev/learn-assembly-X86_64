@@ -1,5 +1,4 @@
 section .bss
-    Buff resb 1
 
 section .data
 
